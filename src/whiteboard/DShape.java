@@ -7,8 +7,9 @@ package whiteboard;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.io.Serializable;
 import java.util.ArrayList;
-public class DShape implements ModelListener {
+public class DShape implements ModelListener, Serializable {
 	DShapeModel shapeModel;
 	public DShape() {
 		shapeModel = new DShapeModel(0, 0, 0, 0, Color.gray);
